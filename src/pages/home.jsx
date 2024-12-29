@@ -9,7 +9,7 @@ function HomePage() {
   return (
     <div className="home-page">
       <Navbar/>
-      <img src={slideshowplaceholder} alt="Slideshow placeholder" style={{width: 'auto', height: '100%'}} />
+      <img src={slideshowplaceholder} alt="Slideshow placeholder" style={{width: '100%', height: '450px', overflow: 'hidden', objectFit: 'cover'}} />
       {/*<Slideshow/>*/}
       <Footer/>
     </div>
