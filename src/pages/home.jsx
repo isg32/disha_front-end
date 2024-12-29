@@ -15,6 +15,11 @@ function HomePage() {
       <Navbar/> 
       
       {/* Slideshow */}
+      {/***
+       * The slideshow is not commonized into a seperate module
+       * since it is not used in other pages
+       * and it is used as base for two overlays [sandwitch]
+       * **/}
       <div className="sandwitch">
         <div>
           <p className='overlay' style={{width: '50%', height: '90%', margin: '20px', objectFit: 'cover', backgroundColor: 'rgba(250, 205, 98, 0.85)', borderRadius: '20px'}}>
@@ -26,7 +31,10 @@ function HomePage() {
 
       {/* navwidget */}
       <Pillbar/>
+
+      {/* The slide show is hidden since it dosent work well with vercel*/}
       {/*<Slideshow/>*/}
+
 
       {/* Footer */}
       <Footer/>
