@@ -1,0 +1,114 @@
+.footerx {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45%;
+    background-color: #FFCD2A;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding: 0 20px;
+    color: #000000;
+  }
+
+  .footer-top {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;   
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .footer-top-left {
+    text-align: center;
+    padding-right: 10px;
+  }
+  
+  .footer-top-right {
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  .icons {
+    padding-top: 5px;
+    height: 60px;
+    margin: 10px;  
+  }
+
+  .footerx a {
+    color: #000000;
+    text-decoration: none;
+    
+  }
+
+  .footer-middle {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 75%;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    width: 55%;
+  }
+
+  @media (min-width: 768px) { /* Adjust breakpoint as needed */
+    .newsletter {
+      flex-direction: row; /* Switch to horizontal layout */
+    }
+  }
+
+  .newsletter input[type=email] {
+    border-radius: 10px;
+    margin: 8px 5px;
+    width: 100%;
+    height: auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #EDE7E3;
+    color: #000000;
+    font-size: 100%;
+  }
+
+  .footer-bottom button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 10px;
+  }
+
+  .taglinex {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    width: 10%;
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin: 10px 20px 20px 20px;
+  }
+
+  .footer-bottom img {
+    height: 50%;
+  }
+
+  .footerlinks{
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: medium;
+  }

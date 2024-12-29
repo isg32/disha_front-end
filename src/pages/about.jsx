@@ -1,4 +1,4 @@
-import './style.css'
+import '../styles/style.css'
 import disha_logo from '../assets/images/disha_Logo.svg'
 import seventyfiveyears from '../assets/images/disha_75years.png'
 

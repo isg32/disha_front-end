@@ -41,48 +41,4 @@
     color: #888;
   }
   
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
-    background-color: #EDE7E3;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    padding: 0 20px;
-  }
-
-  .navbar-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-  }
-
-  .icons {
-    padding-top: 5px;
-    height: 60px;
-    margin: 10px;  
-  }
-
-  .navbar a {
-    color: #000000;
-    text-decoration: none;
-    
-  }
-
-  .navbar-bottom {
-    padding: 2%;
-    align-items: center;
-  }
-
-  .navbar-bottom img {
-    height: 50%;
-  }
-
-  .navlinks{
-    margin-left: 2%;
-    margin-right: 2%;
-    font-size: medium;
-  }
+  
