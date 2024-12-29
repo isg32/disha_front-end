@@ -29,7 +29,7 @@ function Footer() {
         </div>
         <div className='footer-bottom'>
             <p>© 2024 Amar Ujala Disha - All rights reserved | Contact Us</p>
-            <img src={disha_logo} alt="" /> 
+            <img src={disha_logo} alt="disha logo" /> 
         </div>
       </nav>
     </>

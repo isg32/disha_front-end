@@ -1,9 +1,9 @@
 .footerx {
-    position: fixed;
+    position:absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 45%;
+    height: 50%;
     background-color: #FFCD2A;
     grid-template-rows: 1fr 1fr;
     align-items: center;
@@ -66,6 +66,9 @@
     .newsletter {
       flex-direction: row; /* Switch to horizontal layout */
     }
+    .footerx {
+      height: 40%;
+    }
   }
 
   .newsletter input[type=email] {
@@ -100,11 +103,12 @@
     display: flex;
     align-items: top;
     justify-content: space-between;
-    margin: 10px 20px 20px 20px;
+    margin: 5px;
   }
 
   .footer-bottom img {
-    height: 50%;
+    height: 40px;
+    width: auto;
   }
 
   .footerlinks{
