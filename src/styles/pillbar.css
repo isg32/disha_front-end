@@ -1,0 +1,131 @@
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    transition: .5s ease;
+    opacity: 1;
+    color: white;
+    padding: 10px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px color(display-p3 0 0 0 / 0.25);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+  
+  }
+  
+  /* PillBar.css */
+  .pill-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0a500; /* Replace with your yellow color */
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 900px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin: 0 auto;  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px color(display-p3 0 0 0 / 0.25);
+  }
+  
+  .pill-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 150px; /* Prevents the sections from being too narrow */
+  }
+  
+  .pill-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  .pill-section p {
+    font-size: 14px;
+    color: black;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 40px;
+    background-color: white;
+    margin: 0 10px;
+  }
+  
+  .search-button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-button span {
+    font-size: 20px;
+    color: #f0a500;
+  }
+  
+  
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+
+    .overlay2 {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 100px;
+      transition: .5s ease;
+      opacity: 1;
+      color: white;
+      padding: 10px;
+      color: #FFF;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      text-shadow: 0px 4px 4px color(display-p3 0 0 0 / 0.25);
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      text-transform: capitalize;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 0;
+    
+    }
+  
+    .pill-bar {
+      flex-direction: column;
+      padding: 5px;
+      border-radius: 30px;
+    }
+  
+    .pill-section {
+      margin-bottom: 5px;
+    }
+  
+    .divider {
+      width: 40px;
+      height: 5px;
+      background-color: white;
+      margin: 0 10px;
+    }
+  
+    .search-button {
+      margin-top: 10px;
+      align-self: center;
+    }
+  
+  }
