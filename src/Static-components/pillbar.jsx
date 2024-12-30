@@ -1,9 +1,10 @@
 import React from 'react';
 import '../styles/pillbar.css';
+import '../styles/common.css';
 
 function Pillbar() {
   return (
-        <div className='surround'>
+        <div className='surround hvr-grow-minimal'>
             <div className='overlay2' style={{width: '60%', height: '25%', objectFit: 'cover', borderRadius: '25px'}}>
             <div className="pill-bar">
             <div className="pill-section">

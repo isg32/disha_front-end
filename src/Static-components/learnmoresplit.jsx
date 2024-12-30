@@ -1,13 +1,14 @@
 import '../styles/learnmoresplit.css'
+import '../styles/common.css'
 
 function Learnmoresplit() {
     return (
         <div className='learnmoresplit'>
-        <div>
+        <div className='hvr-grow'>
           <p className='headtext'>Disha Ujala</p>
           <p className='subheadtext' style={{fontWeight: 'lighter'}} >A New World</p>
         </div>
-        <div className='button-out'>
+        <div className='button-out hvr-grow'>
           <button className='buttonsi'>
           <p>Learn More</p>
           </button>

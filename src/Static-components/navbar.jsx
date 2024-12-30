@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/navbar.css'
+import '../styles/common.css'
 import disha_logo from '../assets/images/disha_Logo.svg'
 import seventyfiveyears from '../assets/images/disha_75years.png'
 import sparkicon from '../assets/images/Navbar-icons/spark.svg'
@@ -21,10 +22,10 @@ function Navbar() {
         </div>
         </div>
         <div className='navbar-bottom'>
-            <a href="/" className='navlinks'> <img src={homeicon}  alt="home icon" /> Home</a> 
-            <a href="/" className='navlinks'> <img src={cubicleicon}  alt="home icon" /> Disha Exam</a> 
-            <a href="/" className='navlinks'> <img src={commandicon}  alt="home icon" /> Events & Quizes</a> 
-            <a href="/" className='navlinks'> <img src={sparkicon}  alt="home icon" /> Our Highlights</a> 
+            <a href="/" className='navlinks hvr-grow'> <img src={homeicon}  alt="home icon" /> Home</a> 
+            <a href="/" className='navlinks hvr-grow'> <img src={cubicleicon}  alt="home icon" /> Disha Exam</a> 
+            <a href="/" className='navlinks hvr-grow'> <img src={commandicon}  alt="home icon" /> Events & Quizes</a> 
+            <a href="/" className='navlinks hvr-grow'> <img src={sparkicon}  alt="home icon" /> Our Highlights</a> 
         </div>
       </nav>
     </>
