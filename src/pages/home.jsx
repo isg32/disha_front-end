@@ -9,6 +9,7 @@ import seventyfiveyears from '../assets/images/disha_75years.png'
 import Learnmoresplit from '../Static-components/learnmoresplit.jsx'
 import Bannertwp from '../assets/images/banner2.png'
 import Banner3twp from '../assets/images/banner3overlay.png'
+import HighlightsFromYearago from '../Static-components/highlights.jsx'
 
 function HomePage() {
   return (
@@ -54,6 +55,10 @@ function HomePage() {
         </div>
         <button className='hvr-grow' style={{margin: '6px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} >See Last Year's winners</button>
       </div>
+
+
+      {/* Footer */}
+      <HighlightsFromYearago/>
 
       {/* Footer */}
       <Footer/>
