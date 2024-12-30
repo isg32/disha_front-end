@@ -87,10 +87,43 @@
 
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
 
+    /* PillBar.css */
+    .pill-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f0a500; /* Replace with your yellow color */
+      width: 80%;
+      max-width: 900px;
+      flex-wrap: wrap; /* Allow wrapping for smaller screens */
+      margin: 0 66%;
+      box-shadow: 0px 4px 4px 0px color(display-p3 0 0 0 / 0.25);
+    }
+      
+  .pill-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 150px; /* Prevents the sections from being too narrow */
+  }
+  
+  .pill-section h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  .pill-section p {
+    font-size: 12px;
+    color: black;
+  }
+
   .surround {
-    margin-left: 16%;
+    margin-left: 18%;
     margin-bottom: 100px;
-    width: 100%;
+    width: 90%;
     text-align: center;
     padding: 20px;
   }
