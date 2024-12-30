@@ -92,7 +92,7 @@ function HomePage() {
       <h2>Our Sponcers</h2>
       <img src={sparkleicon} alt="" style={{height: '3em'}}/>
     </div>
-    <img src={sponcersplaceholder} alt="" style={{width: '60%',margin: '5%', marginBottom: '10%'}} />
+    <img src={sponcersplaceholder} alt="" style={{width: '75%',margin: '5%', marginBottom: '10%'}} />
 
     {/* Footer */}
       <Footer/>
