@@ -49,7 +49,9 @@ function HomePage() {
       {/* Another Banner */}
       <div className='hvr-grow-minimal' style={{width: 'auto', height: 'auto', display:'flex', flexDirection: 'column',justifyContent: 'center', alignItems: 'center', margin: 'auto', marginBottom: '10%'}} >
       <img className='hvr-grow-minimal' src={Bannertwp} alt="Banner2" style={{width: '70%', height: 'auto'}} />
-          <button className='hvr-grow' style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} >Important Links</button>
+          <button className='hvr-grow' style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}}
+          onClick={() => window.location.href = '/importantlinks'} >Important Links
+           </button>
       </div>
 
       {/* Another Banner */}
