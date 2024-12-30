@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/home';
-import Importantlinks from './pages/importantlinks';
+import Importantlinks from './pages/Importantlinks';
 
 function App() {
   
