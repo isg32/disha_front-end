@@ -10,6 +10,7 @@ import Learnmoresplit from '../Static-components/learnmoresplit.jsx'
 import Bannertwp from '../assets/images/banner2.png'
 import Banner3twp from '../assets/images/banner3overlay.png'
 import HighlightsFromYearago from '../Static-components/highlights.jsx'
+import couponexample from '../assets/images/Coupon Example.png'
 
 function HomePage() {
   return (
@@ -59,6 +60,15 @@ function HomePage() {
 
       {/* Last year Highlights */}
       <HighlightsFromYearago/>
+
+      {/* Here Comes The Coupons */}
+      <img 
+        src={couponexample} 
+        alt="Coupon Example" 
+        style={
+          {width: '70%', height: 'auto', margin: '0% 20px 10% 20px', borderRadius: '20px', boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}
+        } 
+      />
 
       {/* Footer */}
       <Footer/>

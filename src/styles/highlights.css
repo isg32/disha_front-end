@@ -2,7 +2,7 @@
   text-align: center;
   background-color: #fdd835;
   padding: 20px 20%;
-  margin-bottom: 250px;
+  margin-bottom: 10%;
 }
 
 .highlights h2 {
@@ -46,8 +46,8 @@ img.slide {
   .highlights {
     text-align: center;
     background-color: #fdd835;
-    padding: 20px;
-    margin-bottom: 50px;
+    padding: 10%;
+    margin-bottom: 10%;
   }
   
   .slideshow2 {
