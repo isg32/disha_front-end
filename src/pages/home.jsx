@@ -12,6 +12,8 @@ import Banner3twp from '../assets/images/banner3overlay.png'
 import HighlightsFromYearago from '../Static-components/highlights.jsx'
 import couponexample from '../assets/images/Coupon Example.png'
 import Marquee_image from '../assets/images/sponcers_marque.png'
+import sparkleicon from '../assets/images/sparkles.png'
+import sponcersplaceholder from '../assets/images/sponcers-placeholder.png'
 
 function HomePage() {
   return (
@@ -72,7 +74,7 @@ function HomePage() {
       />
 
       
-    {/* sponcers' marque */}
+    {/* previously participated schools' marque */}
     <h2 style={
       {margin: '40px 20px', color: 'rgba(0, 0, 0, 0.5)'}
       }>Previously Participated schools
@@ -84,6 +86,14 @@ function HomePage() {
       </div>
     </div>
     
+    {/* Footer */}
+    <div className='sponcers-title'>
+      <img src={sparkleicon} alt="" style={{transform: 'rotate(180deg)', height: '3em'}} />
+      <h2>Our Sponcers</h2>
+      <img src={sparkleicon} alt="" style={{height: '3em'}}/>
+    </div>
+    <img src={sponcersplaceholder} alt="" style={{width: '60%',margin: '5%', marginBottom: '10%'}} />
+
     {/* Footer */}
       <Footer/>
     </div>
