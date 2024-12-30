@@ -42,8 +42,8 @@ function SlideshowA() {
   }, []);
 
   return (
-    <div className="slideshow2">
-      <h2>Highlights from last year</h2>
+    <div className="slideshow2 hvr-grow-minimal">
+      <h2 className='hvr-grow-minimal'>Highlights from last year</h2>
      
       <div className="slide-container">
         <img

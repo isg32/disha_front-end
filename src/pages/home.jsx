@@ -30,7 +30,7 @@ function HomePage() {
        * **/}
       <div className="sandwitch">
         <div>
-          <p className='overlay' style={{width: '50%', height: '90%', margin: '20px', objectFit: 'cover', backgroundColor: 'rgba(250, 205, 98, 0.85)', borderRadius: '20px'}}>
+          <p className='overlay hvr-grow-minimal' style={{width: '50%', height: '90%', margin: '20px', objectFit: 'cover', backgroundColor: 'rgba(250, 205, 98, 0.85)', borderRadius: '20px'}}>
           Disha: This Time, Bigger Achievements, Better Learning, and Bolder Moves!
             </p>
         </div>
@@ -69,6 +69,7 @@ function HomePage() {
       {/* Here Comes The Coupons */}
       <img 
         src={couponexample} 
+        className='hvr-grow-minimal'
         alt="Coupon Example" 
         style={
           {width: '70%', height: 'auto', margin: '0% 20px 10% 20px', borderRadius: '20px', boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}
@@ -89,12 +90,12 @@ function HomePage() {
     </div>
     
     {/* Footer */}
-    <div className='sponcers-title'>
+    <div className='sponcers-title hvr-grow-minimal'>
       <img src={sparkleicon} alt="" style={{transform: 'rotate(180deg)', height: '3em'}} />
       <h2>Our Sponcers</h2>
       <img src={sparkleicon} alt="" style={{height: '3em'}}/>
     </div>
-    <img src={sponcersplaceholder} alt="" style={{width: '75%',margin: '5%', marginBottom: '10%'}} />
+    <img className='hvr-grow-minimal' src={sponcersplaceholder} alt="" style={{width: '75%',margin: '5%', marginBottom: '10%'}} />
 
     {/* Footer */}
       <Footer/>

@@ -3,7 +3,7 @@ import '../styles/common.css'
 
 function Learnmoresplit() {
     return (
-        <div className='learnmoresplit'>
+        <div className='learnmoresplit hvr-grow-minimal'>
         <div className='hvr-grow'>
           <p className='headtext'>Disha Ujala</p>
           <p className='subheadtext' style={{fontWeight: 'lighter'}} >A New World</p>
