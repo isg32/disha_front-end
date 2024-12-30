@@ -91,6 +91,35 @@ body {
   flex-shrink: 0;
 }
 
+.marquee-container {
+  overflow: hidden; /* Hide the overflow */
+  width: 100%; /* Full width of the container */
+  height: 200px; /* Set the desired height for the image */
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.marquee {
+  display: flex; /* Use flex to align images in a row */
+  animation: scroll 10s linear infinite; /* Continuous scroll animation */
+}
+
+.marquee img {
+  height: 100%; /* Fit the container height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Keyframes for seamless scrolling */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
 @media (min-width: 768px) { /* Adjust breakpoint as needed */
   .overlay {
     font-size: 40px;

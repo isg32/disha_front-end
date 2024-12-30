@@ -11,6 +11,7 @@ import Bannertwp from '../assets/images/banner2.png'
 import Banner3twp from '../assets/images/banner3overlay.png'
 import HighlightsFromYearago from '../Static-components/highlights.jsx'
 import couponexample from '../assets/images/Coupon Example.png'
+import Marquee_image from '../assets/images/sponcers_marque.png'
 
 function HomePage() {
   return (
@@ -70,7 +71,17 @@ function HomePage() {
         } 
       />
 
-      {/* Footer */}
+      
+    {/* sponcers' marque */}
+    <h2 style={{margin: '40px 20px', color: 'rgba(0, 0, 0, 0.5)'}}>Previously Participated schools</h2>
+    <div className="marquee-container">
+      <div className="marquee">
+        <img src={Marquee_image} alt="Scrolling Marquee" />
+        <img src={Marquee_image} alt="Scrolling Marquee" /> {/* Duplicate for seamless scrolling */}
+      </div>
+    </div>
+    
+    {/* Footer */}
       <Footer/>
     </div>
   )
