@@ -57,7 +57,7 @@ function HomePage() {
       </div>
 
 
-      {/* Footer */}
+      {/* Last year Highlights */}
       <HighlightsFromYearago/>
 
       {/* Footer */}
