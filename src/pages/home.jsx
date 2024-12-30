@@ -7,6 +7,7 @@ import Slideshow from '../Static-components/slideshow.jsx'
 import slideshowplaceholder from '../assets/images/slideshow/image 34.png'
 import seventyfiveyears from '../assets/images/disha_75years.png'
 import Learnmoresplit from '../Static-components/learnmoresplit.jsx'
+import Bannertwp from '../assets/images/banner2.png'
 
 function HomePage() {
   return (
@@ -38,6 +39,12 @@ function HomePage() {
 
       {/* learn more split */}
       <Learnmoresplit/>
+
+      {/* Another Banner */}
+      <div className='hvr-grow-minimal' style={{width: 'auto', height: 'auto', display:'flex', flexDirection: 'column',justifyContent: 'center', alignItems: 'center', margin: 'auto'}} >
+      <img className='hvr-grow-minimal' src={Bannertwp} alt="Banner2" style={{width: '90%', height: 'auto'}} />
+          <button className='hvr-grow' style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} >Important Links</button>
+      </div>
 
       {/* Footer */}
       <Footer/>
