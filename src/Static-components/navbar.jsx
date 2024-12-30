@@ -12,7 +12,7 @@ function Navbar() {
   
   return (
     <>
-      <nav className='navbar'>
+      <nav className='navbar' style={{marginBottom: '50px'}}>
         <div className='navbar-top'>
         <div>
           <img src={disha_logo} className='icons' alt="Disha logo" />

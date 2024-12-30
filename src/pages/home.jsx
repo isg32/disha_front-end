@@ -12,8 +12,8 @@ import Marquee_image from '../assets/images/sponcers_marque.png';
 import sparkleicon from '../assets/images/sparkles.png';
 import sponcersplaceholder from '../assets/images/sponcers-placeholder.png';
 import image26 from '../assets/images/slideshow/image 34.png';
-import image27 from '../assets/images/slideshow/image 35.png';
-import image28 from '../assets/images/slideshow/image 36.png';
+import image27 from '../assets/images/slideshow/image 50.png';
+import image28 from '../assets/images/slideshow/image 51.png';
 
 const slides = [
   { id: 1, image: image26 },
@@ -51,7 +51,7 @@ function HomePage() {
       <Navbar />
 
       {/* Slideshow */}
-      <div className="sandwitch">
+      <div className="sandwitch" style={{paddingTop: '170px'}}>
         <div>
           <p
             className="overlay hvr-grow-minimal"

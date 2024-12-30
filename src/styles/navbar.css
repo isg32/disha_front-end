@@ -1,13 +1,11 @@
 .navbar {
-    top: 0;
-    left: 0;
-    right: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
     height: 170px;
     background-color: #EDE7E3;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
     padding: 0 20px;
-    border-bottom: 20px solid #FFCD2A;
+    border-bottom: 25px solid #FFCD2A;
   }
 
   .navbar-top {
@@ -30,12 +28,12 @@
   }
 
   .navbar-bottom {
-    padding: 2%;
+    padding: 0%;
     align-items: center;
   }
 
   .navbar-bottom img {
-    height: 50%;
+    height: 60%;
   }
 
   .navlinks{

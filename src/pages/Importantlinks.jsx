@@ -20,7 +20,7 @@ function Importantlinks() {
        * since it is not used in other pages
        * and it is used as base for two overlays [sandwitch]
        * **/}
-      <img src={Importantlinksbannerplaceholder} alt="custom page placeholder" style={{width: '100%'}} />
+      <img src={Importantlinksbannerplaceholder} alt="custom page placeholder" style={{width: '100%', marginTop: '170px'}} />
 
     {/* 2 sections - important links with button/details and a chick  */}
     <div className='importantlinks-main hvr-grow-minimal'>
