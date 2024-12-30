@@ -1,0 +1,83 @@
+.learnmoresplit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 1% 15% 1% 15%;
+    background-color: #F5BC00;
+    margin-bottom: 250px;
+  }
+  
+  .learnmoresplit p {
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px color(display-p3 0 0 0 / 0.25);
+  }
+  
+  .learnmoresplit .headtext {
+    font-size: 15px;
+    margin: 5px 0px 0px 0px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px color(display-p3 0 0 0 / 0.25);
+  }
+  
+  .learnmoresplit .subheadtext {
+    font-weight: lighter;
+    margin: 0px 0px 5px 0px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px color(display-p3 0 0 0 / 0.25);
+  }
+  
+  .learnmoresplit .button-out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .learnmoresplit .buttonsi {
+    padding: 0px 25px;
+    height: 60px;
+    border: 2px solid white;
+    background: none;
+    border-radius: 0px;
+  }
+  
+  @media (min-width: 768px) { /* Adjust breakpoint as needed */
+  
+    .learnmoresplit {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      height: auto;
+      padding: 1% 20% 1% 20%;
+      background-color: #F5BC00;
+      margin-bottom: 150px;
+    }
+  
+    .learnmoresplit p {
+      font-weight: bold;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      text-shadow: 0px 4px 4px color(display-p3 0 0 0 / 0.25);
+    }
+    
+    .learnmoresplit .headtext {
+      font-size: 30px;
+      margin: 5px 0px 0px 0px;
+      font-weight: bold;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      text-shadow: 0px 4px 4px color(display-p3 0 0 0 / 0.25);
+    }
+    
+    .learnmoresplit .subheadtext {
+      font-weight: lighter;
+      margin: 0px 0px 5px 0px;
+      font-weight: bold;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      text-shadow: 0px 4px 4px color(display-p3 0 0 0 / 0.25);
+    }
+  }
+  

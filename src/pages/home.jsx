@@ -6,6 +6,7 @@ import '../styles/style.css'
 import Slideshow from '../Static-components/slideshow.jsx'
 import slideshowplaceholder from '../assets/images/slideshow/image 34.png'
 import seventyfiveyears from '../assets/images/disha_75years.png'
+import Learnmoresplit from '../Static-components/learnmoresplit.jsx'
 
 function HomePage() {
   return (
@@ -36,20 +37,7 @@ function HomePage() {
       <Pillbar/>
 
       {/* learn more split */}
-      <div className='learnmoresplit'>
-        
-        <div>
-        <p className='headtext'>Disha Ujala</p>
-        <p className='subheadtext' style={{fontWeight: 'lighter'}} >A New World</p>
-        </div>
-        
-        <div className='button-out'>
-          <button className='buttonsi'>
-          <p>Learn More</p>
-        </button>
-        </div>
-      </div>
-
+      <Learnmoresplit/>
 
       {/* Footer */}
       <Footer/>
