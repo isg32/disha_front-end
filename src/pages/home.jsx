@@ -8,6 +8,7 @@ import slideshowplaceholder from '../assets/images/slideshow/image 34.png'
 import seventyfiveyears from '../assets/images/disha_75years.png'
 import Learnmoresplit from '../Static-components/learnmoresplit.jsx'
 import Bannertwp from '../assets/images/banner2.png'
+import Banner3twp from '../assets/images/banner3overlay.png'
 
 function HomePage() {
   return (
@@ -41,9 +42,17 @@ function HomePage() {
       <Learnmoresplit/>
 
       {/* Another Banner */}
-      <div className='hvr-grow-minimal' style={{width: 'auto', height: 'auto', display:'flex', flexDirection: 'column',justifyContent: 'center', alignItems: 'center', margin: 'auto'}} >
-      <img className='hvr-grow-minimal' src={Bannertwp} alt="Banner2" style={{width: '90%', height: 'auto'}} />
+      <div className='hvr-grow-minimal' style={{width: 'auto', height: 'auto', display:'flex', flexDirection: 'column',justifyContent: 'center', alignItems: 'center', margin: 'auto', marginBottom: '10%'}} >
+      <img className='hvr-grow-minimal' src={Bannertwp} alt="Banner2" style={{width: '70%', height: 'auto'}} />
           <button className='hvr-grow' style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} >Important Links</button>
+      </div>
+
+      {/* Another Banner */}
+      <div className='hvr-grow-minimal' style={{ width: 'auto', height: 'auto', display:'flex', flexDirection: 'column',justifyContent: 'space-between', alignItems: 'center', marginBottom: '10%'}} >
+        <div style={{margin: '1% 15%', borderRadius: '40px', background: '#FFE9AE' }}>
+        <img src={Banner3twp} alt="banner3 overlay" style={{margin: '6% 15%',width: '60%', height: 'auto'}}/>
+        </div>
+        <button className='hvr-grow' style={{margin: '6px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} >See Last Year's winners</button>
       </div>
 
       {/* Footer */}
