@@ -77,9 +77,23 @@
     color: #f0a500;
   }
   
-  
+  .surround {
+    margin-left: 16%;
+    margin-bottom: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }  
 
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
+
+  .surround {
+    margin-left: 16%;
+    margin-bottom: 250px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
 
     .overlay2 {
       position: absolute;

@@ -29,11 +29,26 @@ function HomePage() {
         <img src={slideshowplaceholder} alt="Slideshow placeholder" style={{width: '100%', height: '450px', overflow: 'hidden', objectFit: 'cover'}} />
       </div>
 
+      {/* The slide show is hidden since it dosent work well with vercel*/}
+      {/*<Slideshow/>*/}
+
       {/* navwidget */}
       <Pillbar/>
 
-      {/* The slide show is hidden since it dosent work well with vercel*/}
-      {/*<Slideshow/>*/}
+      {/* learn more split */}
+      <div className='learnmoresplit'>
+        
+        <div>
+        <p className='headtext'>Disha Ujala</p>
+        <p className='subheadtext' style={{fontWeight: 'lighter'}} >A New World</p>
+        </div>
+        
+        <div className='button-out'>
+          <button className='buttonsi'>
+          <p>Learn More</p>
+        </button>
+        </div>
+      </div>
 
 
       {/* Footer */}
