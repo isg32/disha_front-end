@@ -73,7 +73,10 @@ function HomePage() {
 
       
     {/* sponcers' marque */}
-    <h2 style={{margin: '40px 20px', color: 'rgba(0, 0, 0, 0.5)'}}>Previously Participated schools</h2>
+    <h2 style={
+      {margin: '40px 20px', color: 'rgba(0, 0, 0, 0.5)'}
+      }>Previously Participated schools
+    </h2>
     <div className="marquee-container">
       <div className="marquee">
         <img src={Marquee_image} alt="Scrolling Marquee" />
