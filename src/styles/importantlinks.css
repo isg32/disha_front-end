@@ -1,0 +1,32 @@
+.importantlinks-main {
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.side-left {
+    width: 50%;
+    text-align: left;
+    padding: 5%;
+}
+
+.side-right {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .importantlinks-main {
+        flex-direction: column;
+    }
+    .side-left {
+        width: 100%;
+    }
+    .side-right {
+        width: 100%;
+    }
+}
