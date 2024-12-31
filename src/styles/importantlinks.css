@@ -9,6 +9,21 @@
     text-align: center;
 }
 
+.DivineButtons {
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonf {
+    width: 80%;
+    font-size: 0.9em;
+}
+
 .side-left {
     width: 50%;
     text-align: left;
@@ -28,5 +43,18 @@
     }
     .side-right {
         width: 100%;
+    }
+    .DivineButtons {
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttonf {
+        width: 100%;
+        font-size: 0.9em;
     }
 }
