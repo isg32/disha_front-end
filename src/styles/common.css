@@ -1,3 +1,17 @@
+.main-body {
+  margin: 0;
+  padding: 0;
+  padding-top: 6em;
+}
+
+@media (max-width: 768px) {
+  .main-body {
+    margin: 0;
+    padding: 0;
+    padding-top: 8.2em;
+  }
+}
+
 .button span {
     cursor: pointer;
     display: inline-block;

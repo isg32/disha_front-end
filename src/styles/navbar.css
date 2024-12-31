@@ -2,7 +2,7 @@
     position: fixed;
     z-index: 1000;
     width: 100%;
-    height: 170px;
+    height: 15%;
     background-color: #EDE7E3;
     padding: 0 20px;
     border-bottom: 25px solid #FFCD2A;
@@ -12,12 +12,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    flex-direction: row;
   }
 
   .icons {
     padding-top: 5px;
-    height: 60px;
+    height: 6%;
     margin: 10px;  
   }
 
@@ -27,9 +27,10 @@
     
   }
 
-  .navbar-bottom {
+  .navbar-links {
     padding: 0%;
     align-items: center;
+    width: 100%;
   }
 
   .navbar-bottom img {
@@ -40,4 +41,30 @@
     margin-left: 2%;
     margin-right: 2%;
     font-size: medium;
+  }
+
+  @media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .navbar {
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+      height: 15%;
+      background-color: #EDE7E3;
+      padding: 0 20px;
+      border-bottom: 25px solid #FFCD2A;
+    }
+    .navbar-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    .navbar-links {
+      margin-top: 10%;
+      align-items: center;
+      width: 100%;
+    }
+    .icons {
+      display: none;
+    }
   }
