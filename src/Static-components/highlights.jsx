@@ -50,9 +50,10 @@ function SlideshowA() {
           src={slides[currentIndex].image}
           alt={`Slide ${currentIndex + 1}`}
           className="slide"
-          style={{ width: '100%', opacity: '1', objectFit: 'cover', borderRadius: '20px' }}
-        /> <p className="caption">{slides[currentIndex].caption}</p>
+          style={{ width: '90%', opacity: '1', objectFit: 'cover', borderRadius: '20px' }}
+        />
       </div>
+      <p className="caption">{slides[currentIndex].caption}</p>
     </div>
   );
 }
