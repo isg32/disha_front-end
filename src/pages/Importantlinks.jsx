@@ -7,6 +7,7 @@ import Importantlinksbannerplaceholder from '../assets/images/generic-placeholde
 import '../styles/importantlinks.css'
 import awomanholdingpapers from '../assets/images/chicktemplate.png'
 import ourpartners from '../assets/images/ourpartneres.png'
+import Popup from 'reactjs-popup'
 
 function Importantlinks() {
   return (
@@ -37,11 +38,26 @@ function Importantlinks() {
                     <li>Colors of Culture - Highlight diversity and vibrancy within your community.</li>
                 </ul>
                 <div className='DivineButtons hvr-grow-minimal'>
-                    <button className='buttonf hvr-grow' style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} >Download Previous Year Papers</button>
-                    <button className='buttonf hvr-grow' style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} >See Exam results</button>
-                    <button className='buttonf hvr-grow' style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} >Check Exam Dates</button>
-                    <button className='buttonf hvr-grow' style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} >Download Admit Card</button>
-                    <button className='buttonf hvr-grow' style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} >See Last Examination's Rans</button>
+                  <Popup trigger=
+                  {<button className='buttonf hvr-grow'style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}}>Download Previous Year Papers</button>}modal nested>
+                  {close => (<div className='modal' style={{backgroundColor: 'white', color: 'black', padding: '20px', borderRadius: '10px', boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} ><div className='content'>Coming Soon !</div></div>)}
+                  </Popup>
+                  <Popup trigger=
+                  {<button className='buttonf hvr-grow'style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}}>See Exam results</button>}modal nested>
+                  {close => (<div className='modal' style={{backgroundColor: 'white', color: 'black', padding: '20px', borderRadius: '10px', boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} ><div className='content'>Results are yet to Be Declared</div></div>)}
+                  </Popup>
+                  <Popup trigger=
+                  {<button className='buttonf hvr-grow'style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}}>Check Exam Dates</button>}modal nested>
+                  {close => (<div className='modal' style={{backgroundColor: 'white', color: 'black', padding: '20px', borderRadius: '10px', boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} ><div className='content'>Exam Dates are yet to Be Declared</div></div>)}
+                  </Popup>
+                  <Popup trigger=
+                  {<button className='buttonf hvr-grow'style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}}>Download Admit Card</button>}modal nested>
+                  {close => (<div className='modal' style={{backgroundColor: 'white', color: 'black', padding: '20px', borderRadius: '10px', boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} ><div className='content'>Admit car will be released soon</div></div>)}
+                  </Popup>
+                  <Popup trigger=
+                  {<button className='buttonf hvr-grow'style={{margin: '10px', border: 'none' ,borderRadius: '50px' ,background: '#FF9A00',boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}}>See Last Examination's Ranks</button>}modal nested>
+                  {close => (<div className='modal' style={{backgroundColor: 'white', color: 'black', padding: '20px', borderRadius: '10px', boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'}} ><div className='content'>Results are yet to Be Declared</div></div>)}
+                  </Popup>
                 </div>
             </div>
 
