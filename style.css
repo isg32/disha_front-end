@@ -12,10 +12,9 @@ body {
 }
 
 /* extras */
-
 .vert-splitter {
-    border-left:1px solid #000;
-    height:200px
+    border-left: 1px solid #000;
+    height: 200px;
 }
 
 /* Navbar */
@@ -25,11 +24,14 @@ body {
     align-items: center;
     padding: 1rem 5%;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo img {
     max-height: 50px;
+    width: auto;
 }
 
 .nav-links {
@@ -41,6 +43,11 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
 }
 
 .tndc {
@@ -56,13 +63,13 @@ body {
 .split-section {
     display: flex;
     background-color: #007bff;
-    align-items: center
+    align-items: center;
+    min-height: calc(100vh - 80px);
 }
 
 .image-half {
     flex: 2;
-    padding-right: 2rem;
-    padding-left: 10%;
+    padding: 2rem 2rem 2rem 10%;
     height: 100%;
 }
 
@@ -72,6 +79,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.text-half h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
 }
 
 .text-half span {
@@ -81,24 +95,33 @@ body {
 .text-half a {
     text-decoration: none;
     color: yellow;
+    transition: opacity 0.3s ease;
+}
+
+.text-half a:hover {
+    opacity: 0.8;
 }
 
 .image-half img {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
 /* Results Strip */
 .results-strip {
-    align-items: baseline;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin: 2rem 0;
     background-color: #f8f9fa;
     padding: 2rem 15%;
     text-align: center;
     justify-content: space-evenly;
+}
+
+.results-strip h2 {
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
 }
 
 .announcement-btn {
@@ -107,16 +130,22 @@ body {
     border: none;
     padding: 1rem 2rem;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
     font-weight: bold;
-    margin-top: 1rem;
     cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.announcement-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
 /* Carousel Section */
 .carousel-section {
     background: none;
-    padding: 5rem 30%;
+    padding: 5rem clamp(1rem, 10vw, 30%);
     overflow: hidden;
     touch-action: pan-y pinch-zoom;
 }
@@ -164,11 +193,16 @@ body {
     background-color: #ccc;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.dot:hover {
+    transform: scale(1.2);
 }
 
 .dot.active {
     background-color: #007bff;
+    transform: scale(1.2);
 }
 
 /* Partners Section */
@@ -177,6 +211,7 @@ body {
     padding: 4rem 5%;
     background-color: #f8f9fa;
     align-items: center;
+    gap: 2rem;
 }
 
 .powered-by {
@@ -205,6 +240,7 @@ body {
     margin-top: 1rem;
     justify-content: space-evenly;
     align-items: center;
+    gap: 1rem;
 }
 
 .coaching, .defence {
@@ -215,6 +251,11 @@ body {
     width: 100%;
     max-width: 200px;
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+.partners-section img:hover {
+    transform: scale(1.05);
 }
 
 /* Tiers Section */
@@ -230,22 +271,26 @@ body {
     background-color: white;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.tier:hover {
+    transform: translateY(-5px);
 }
 
 .tier h3 {
     text-align: center;
     margin-bottom: 2rem;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
 }
 
 .tier-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1rem;
     justify-items: center;
     align-items: center;
-    justify-content: center;
-    align-content: stretch;
 }
 
 .tier-images img {
@@ -253,105 +298,180 @@ body {
     max-width: 100px;
     height: auto;
     border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.tier-images img:hover {
+    transform: scale(1.1);
 }
 
 .prizes {
     width: 100%;
-    background-color: transparent;
-    padding: 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin: 2rem 0;
+}
+
+h1 span {
+    color: #007bff;
 }
 
 .footstrip {
     color: #000;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 2%;
-    grid-column: 1;
+    margin: 2rem 0;
+    padding: 2rem 5%;
     text-align: left;
     justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.footstrip img {
+    max-width: 150px;
+    height: auto;
 }
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        text-align: center;
+        padding: 1rem;
     }
 
     .vert-splitter {
-        border-left:1px solid #000;
-        height:0px;
+        display: none;
     }
 
-    .results-strip, .footstrip {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        grid-column: 1;
-        color: #000;
-        background-color: transparent;
-        padding: 2rem 5%;
-        text-align: center;
-    }
-
-    .carousel-section {
-        background: none;
-        padding: 5rem 10%;
-        overflow: hidden;
-        touch-action: pan-y pinch-zoom;
-    }
-
-    .nav-links {        
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
         margin-top: 1rem;
+        gap: 1rem;
     }
 
     .split-section {
         flex-direction: column;
-    }
-
-    .text-half{
-        padding: 12px;
-        margin-top: 10%;
+        min-height: auto;
+        padding: 2rem 0;
     }
 
     .image-half {
-        padding-right: 0;
-        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    .text-half {
+        padding: 2rem 1rem;
+    }
+
+    .results-strip {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .carousel-section {
+        padding: 2rem 1rem;
     }
 
     .partners-section {
         flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
     }
 
-    .tiers-section {
+    .coaching-defence {
         flex-direction: column;
-    }
-
-    .tier {
-        margin-bottom: 2rem;
+        gap: 2rem;
     }
 
     .partner-images {
-        width: 200px;
-        max-width: 200px;
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        margin-top: 1rem;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
 
+    .partners-section img {
+        max-width: 150px;
+    }
+
+    .tier-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footstrip {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footstrip img {
+        max-width: 120px;
+    }
 }
 
-/* Touch-enabled carousel */
-@media (hover: none) {
-    .carousel-track {
-        cursor: grab;
+/* Tablet Responsive Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .split-section {
+        padding: 3rem 2rem;
+    }
+
+    .image-half {
+        padding: 1rem;
+    }
+
+    .carousel-section {
+        padding: 3rem 10%;
+    }
+
+    .tier-images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar {
+        position: static;
+    }
+
+    .carousel-section,
+    .announcement-btn,
+    .carousel-dots {
+        display: none;
+    }
+
+    .split-section,
+    .partners-section,
+    .tiers-section {
+        break-inside: avoid;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .text-half span,
+    .text-half a {
+        color: #ffff00;
+        text-decoration: underline;
+    }
+
+    .announcement-btn {
+        border: 2px solid #000;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
     }
 }
