@@ -53,7 +53,7 @@ body {
 .tndc {
     display: flex;
     flex-direction: column;
-    background-color: #007bff;
+    background-color: #2b3c6a;
     color: white;
     align-items: start;
     padding: 50px;
@@ -62,7 +62,7 @@ body {
 /* Split Section */
 .split-section {
     display: flex;
-    background-color: #007bff;
+    background-color: #2b3c6a;
     align-items: center;
     min-height: calc(100vh - 80px);
 }
@@ -125,7 +125,7 @@ body {
 }
 
 .announcement-btn {
-    background-color: #007bff;
+    background-color: #2b3c6a;
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -145,7 +145,7 @@ body {
 /* Carousel Section */
 .carousel-section {
     background: none;
-    padding: 5rem clamp(1rem, 10vw, 30%);
+    padding: 2rem clamp(1rem, 5vw, 15%); /* Reduced padding */
     overflow: hidden;
     touch-action: pan-y pinch-zoom;
 }
@@ -153,7 +153,7 @@ body {
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px; /* Reduced max-width */
     margin: 0 auto;
     user-select: none;
 }
@@ -201,7 +201,7 @@ body {
 }
 
 .dot.active {
-    background-color: #007bff;
+    background-color: #2b3c6a;
     transform: scale(1.2);
 }
 
@@ -352,8 +352,10 @@ h1 span {
 }
 
 .TheNumbers {
+    color: #19497f;
     text-align: center;
-    font-size: larger;
+    font-size: 25px;
+    font-weight: bold;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;

@@ -10,6 +10,19 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     let animationID = 0;
     let dragStartTime = 0;
+    let autoScrollInterval;
+
+    // Auto scroll function
+    function startAutoScroll() {
+        autoScrollInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            goToSlide(currentIndex);
+        }, 3000); // Change slide every 3 seconds
+    }
+
+    function stopAutoScroll() {
+        clearInterval(autoScrollInterval);
+    }
 
     // Prevent default behavior on images
     slides.forEach(slide => {
@@ -18,21 +31,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Touch events
-    track.addEventListener('touchstart', touchStart);
+    track.addEventListener('touchstart', (e) => {
+        stopAutoScroll();
+        touchStart(e);
+    });
     track.addEventListener('touchmove', touchMove);
-    track.addEventListener('touchend', touchEnd);
+    track.addEventListener('touchend', () => {
+        touchEnd();
+        startAutoScroll();
+    });
 
     // Mouse events
-    track.addEventListener('mousedown', touchStart);
+    track.addEventListener('mousedown', (e) => {
+        stopAutoScroll();
+        touchStart(e);
+    });
     track.addEventListener('mousemove', touchMove);
-    track.addEventListener('mouseup', touchEnd);
-    track.addEventListener('mouseleave', touchEnd);
+    track.addEventListener('mouseup', () => {
+        touchEnd();
+        startAutoScroll();
+    });
+    track.addEventListener('mouseleave', () => {
+        touchEnd();
+        startAutoScroll();
+    });
 
     // Dot navigation
     dots.forEach(dot => {
         dot.addEventListener('click', (e) => {
+            stopAutoScroll();
             const targetIndex = parseInt(e.target.getAttribute('data-index'));
             goToSlide(targetIndex);
+            startAutoScroll();
         });
     });
 
@@ -123,4 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
             goToSlide(currentIndex);
         }, 250);
     });
+
+    // Start auto-scroll when the page loads
+    startAutoScroll();
 });
