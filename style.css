@@ -10,6 +10,13 @@ body {
     line-height: 1.6;
 }
 
+/* extras */
+
+.vert-splitter {
+    border-left:1px solid #000;
+    height:200px
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -168,12 +175,14 @@ body {
     flex-direction: column;
     padding: 1rem;
     justify-content: center;
+    text-align: center;
 }
 
 .coaching-defence {
     flex: 1;
     display: flex;
     gap: 10%;
+    text-align: center;
     flex-direction: row;
     padding: 1rem;
     align-items: center;
@@ -239,6 +248,11 @@ body {
         text-align: center;
     }
 
+    .vert-splitter {
+        border-left:1px solid #000;
+        height:0px;
+    }
+
     .results-strip {
         display: flex;
         flex-direction: column;
@@ -287,6 +301,18 @@ body {
     .tier {
         margin-bottom: 2rem;
     }
+
+    .partner-images {
+        width: 200px;
+        max-width: 200px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 /* Touch-enabled carousel */
