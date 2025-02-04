@@ -209,7 +209,7 @@ body {
 .partners-section {
     display: flex;
     padding: 4rem 5%;
-    background-color: #f8f9fa;
+    background-color: transparent;
     align-items: center;
     gap: 2rem;
 }
@@ -335,9 +335,37 @@ h1 span {
     background-color: #f8f9fa;
 }
 
+.miscimages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0.3%;
+}
+
+.miscimages img {
+    width: 33.1%;
+}
+
 .footstrip img {
     max-width: 150px;
     height: auto;
+}
+
+.TheNumbers {
+    text-align: center;
+    font-size: larger;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px;
+}
+
+.TheNumbers p {
+    margin: 10px;
 }
 
 /* Mobile Responsive Styles */
@@ -345,6 +373,17 @@ h1 span {
     .navbar {
         flex-direction: column;
         padding: 1rem;
+    }
+
+    .miscimages {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .miscimages img {
+        width: 100%;
     }
 
     .vert-splitter {
