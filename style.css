@@ -8,6 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    color: #000;
 }
 
 /* extras */
@@ -40,6 +41,15 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 500;
+}
+
+.tndc {
+    display: flex;
+    flex-direction: column;
+    background-color: #007bff;
+    color: white;
+    align-items: start;
+    padding: 50px;
 }
 
 /* Split Section */
@@ -210,6 +220,7 @@ body {
 /* Tiers Section */
 .tiers-section {
     display: flex;
+    flex-direction: column;
     padding: 4rem 5%;
     gap: 2rem;
 }
@@ -229,9 +240,12 @@ body {
 
 .tier-images {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
 }
 
 .tier-images img {
@@ -239,6 +253,24 @@ body {
     max-width: 100px;
     height: auto;
     border-radius: 4px;
+}
+
+.prizes {
+    width: 100%;
+    background-color: transparent;
+    padding: 10%;
+}
+
+.footstrip {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2%;
+    grid-column: 1;
+    text-align: left;
+    justify-content: space-between;
 }
 
 /* Mobile Responsive Styles */
@@ -253,12 +285,13 @@ body {
         height:0px;
     }
 
-    .results-strip {
+    .results-strip, .footstrip {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
         grid-column: 1;
-        background-color: #f8f9fa;
+        color: #000;
+        background-color: transparent;
         padding: 2rem 5%;
         text-align: center;
     }
@@ -270,8 +303,9 @@ body {
         touch-action: pan-y pinch-zoom;
     }
 
-    .nav-links {
-        flex-direction: column;
+    .nav-links {        
+        display: flex;
+        flex-direction: row;
         gap: 1rem;
         margin-top: 1rem;
     }
